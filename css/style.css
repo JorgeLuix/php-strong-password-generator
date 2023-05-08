@@ -43,3 +43,9 @@ button[type="submit"]{
     font-weight: bold;
     cursor: pointer;
 }
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

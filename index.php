@@ -10,7 +10,7 @@
     <title>Generatore Password</title>
 </head>
 
-<body>
+<body class="bg-primary-subtle">
     <div class="container">
     <h1 class="text-center">Generatore di password sicure</h1>
         <?php include 'functions.php'; ?>
@@ -26,7 +26,7 @@
             if (!empty($password_length)) {
                 $password = generate_password($password_length);
                 $_SESSION['password'] = $password;
-                header('Location: password.php');
+                header('Location: ./password.php ');
                 exit;
             } else {
                 echo "<p>Inserire un valore per la lunghezza della password.</p>";
